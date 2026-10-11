@@ -1,0 +1,385 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    line-height: 1.7;
+    background: #f8e4cf;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 50px;
+    background: #ffffff;
+    border-top: 4px solid black;
+    border-radius: 10px;
+}
+
+header h2 {
+    margin: 0;
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #171717;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #171717;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.logo:hover {
+    color: #b68b5c;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+    background: #ecbb86;
+    border-radius: 10px;
+    border: 4px solid black;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: #ecbb86;
+    background: #333333;
+}
+.hero {
+     min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 4rem 8%;
+    background:#cdaa8b;
+   border: 2px solid black;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    max-width: 700px;
+    margin: 0 0 1rem;
+    color: black;
+    font-size: 25px;
+    line-height: 1.15;
+}
+
+.hero p {
+    max-width: 500px;
+    font-size: 18px;
+   color: black;
+} 
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid black;
+    flex-shrink: 0;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.profile-pic img:hover {
+    transform: scale(1.1);
+}
+
+.section-title {
+    margin: 0 0 0.5rem;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--distance);
+    padding: 3rem 5%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.card {
+    overflow: hidden;
+    background:black;
+    color: rgb(202, 198, 198);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card > a {
+    display: block;
+    overflow: hidden;
+    border:4px solid black;
+    border-radius: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.card:hover img {
+    transform: scale(1.03);
+}
+
+.card-content {
+    padding: 1.3rem;
+    border: 4px solid black;
+    border-radius: 15px;
+}
+
+.card h3 {
+    margin: 0 0 0.5rem;
+    color:rgb(202, 198, 198);
+}
+
+.card p {
+    margin: 0 0 1rem;
+}
+.project-layout .project-link {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 12px 22px;
+    background-color: black;
+    color:#875422; 
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid #222;
+    transition: all 0.3s ease;
+}
+
+
+.project-layout .project-link:hover {
+    background-color: white;
+    color: #222;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    background: #cdaa8b;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+.big-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.small-images {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;;
+}
+
+.small-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid black;
+    transition: transform 0.5s ease;
+}
+.small-images img:hover {
+    transform: scale(1.1);
+}
+
+.about-text {
+    max-width: 760px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 50px;
+    margin-top: 2rem;
+    background: black;
+    border-top: 4px solid #ffffff;
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+footer p:hover{
+    color: #6b492b;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contact-icon {
+    width: 22px;
+    height: 22px;
+    object-fit:cover;
+    border: 2px solid #6b492b;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+        nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+    nav a {
+        padding: 10pxpx;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .menu-toggle:checked ~ nav {
+        display: flex;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 2rem 5%;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    .hero {
+        min-height: 300px;
+        padding: 3rem 5%;
+    }
+    .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+.hero h1 {
+    max-width: 500px;
+    margin: 0 0 1rem;
+    font-size: 18px;
+    line-height: 1.15;
+}
+
+.hero p {
+    max-width: 500px;
+    font-size: 14px;
+   
+} 
+    .project-layout {
+        padding: 2rem 5%;
+    }
+
+    .small-images {
+        grid-template-columns: 1fr;
+    }
+
+    .small-images img {
+        height: 230px;
+    }
+
+    footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+
+                
+    
