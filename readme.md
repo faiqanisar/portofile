@@ -14,5 +14,4 @@ Bootstrap's responsiv navigation, CSS Grid card layouts and minimalist portfolio
 **Layout:** Jag har använt ` flex` , `grid`
 ### Skisser
 Den är skiss " Home" sida 
-![skiss2 - Home sida ]
-(skiss1.jpeg)
+![skiss2 - Home sida](skiss1.jpeg)
