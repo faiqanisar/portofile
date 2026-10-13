@@ -2,7 +2,7 @@
 Detta är mitt portfolio-porojekt för kursen javautvecklare.
 ### Länkar 
 **Github-repo:** 
-**Publicerad sida (Github pages):**
+**Publicerad sida (Github pages):**https://faiqanisar.github.io/portofile/
 ### Beskrivning
 Jag har skapat en portfolio sida som innehåler en startsida med ett galleri av mina projekt och en informationssida om mig. Man kan besöka varje projekt på en egen sida. Gamla projekt jag använde: Snowman, ID-card, local restaurang.
 ### Inspiration
