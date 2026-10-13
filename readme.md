@@ -1,7 +1,7 @@
 # Min Portfolio - Javautvecklare 
 Detta är mitt portfolio-porojekt för kursen javautvecklare.
 ### Länkar 
-**Github-repo:** 
+**Github-repo:** https://github.com/faiqanisar/portofile.git
 **Publicerad sida (Github pages):**https://faiqanisar.github.io/portofile/
 ### Beskrivning
 Jag har skapat en portfolio sida som innehåler en startsida med ett galleri av mina projekt och en informationssida om mig. Man kan besöka varje projekt på en egen sida. Gamla projekt jag använde: Snowman, ID-card, local restaurang.
