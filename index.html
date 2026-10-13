@@ -1,119 +1,139 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Faiqa's portfolio showcasing web design and HTML and CSS projects.">
+
     <title>Faiqa | Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <a href="index.html" class="logo">
-        <span class="logo-icon">F.</span>
-        <span>Faiqa.</span>
-    </a>
-
-
-    <nav>
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="about.html">Om mig</a>
-        <a href="index.html">Projects</a>
+   <header class="site-header">
+    <nav class="navbar navbar-expand-md" aria-label="Huvudmeny">
+        <div class="container-fluid">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">F.</span>
+                <span>Faiqa.</span>
+            </a>
+            <button
+                class="navbar-toggler hamburger"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Öppna eller stäng menyn">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto topnav">
+                    <li class="nav-item"> <a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+            <li class="nav-item"> <a class="nav-link" href="about.html">Om mig</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="index.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 
-<main>
-    <section class="hero">
-    <div class="hero-text">
-        <p>WELCOME TO MY PORTFOLIO</p>
-        <h1>Hej, jag är Faiqa.</h1>
-        <p>
-            Jag skapar enkla och fina hemsidor med HTML och CSS.
-            Här kan du se mina projekt och lära känna mig.
-        </p>
-        <a class="project-link" href="index.html">
-            Se mina projekt →
-        </a>
-    </div>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <p class="hero-label">WELCOME TO MY PORTFOLIO</p>
+                <h1>Hej, jag är Faiqa.</h1>
+                <p>Jag skapar enkla och fina hemsidor med HTML och CSS.
+                    Här kan du se mina projekt och lära känna mig. </p>
 
-    <div class="profile-pic">
-        <img src="images.jpeg" alt="Min profilbild">
-    </div>
-</section>
+                <a class="project-link" href="#projects"> Se mina projekt → </a>
+            </div>
+            <div class="profile-pic"> <img src="images.jpeg" alt="Faiqas profilbild"> </div>
+        </section>
 
-    <section id="projects">
-        <div style="padding: 2rem 5% 0; background: black; border-radius: 10px; border-bottom:10px solid #cdaa8b;">
-            <h2 class="section-title">Mina projekt</h2>
-            <p style="text-align: center; color: white; font-weight: bold;">Här är några av mina kreativa projekt.</p>
-        </div>
+        <section id="projects">
+        <div class="projects-heading">
+        <h2 class="section-title">Mina projekt</h2>
+        <p style=" color: black; font-size: 20px; text-align: center; font-weight: bold;">
+                    Här är några av mina kreativa projekt.
+                </p>
+            </div>
+       <div class="gallery">
 
-        <div class="gallery">
-            <article class="card">
-                <a href="Bbq tonight.html">
-                    <img src="image1.jpg" alt="BBQ Tonight restaurangprojekt">
-                </a>
-                <div class="card-content">
+                <article class="card">
+                <a href="Bbq tonight.html" class="card-image-link">
+                <img src="image1.jpg" alt="BBQ Tonight restaurangprojekt">
+                    </a>
+                    <div class="card-content">
                     <h3>BBQ Tonight Restaurang</h3>
-                    <p>En restauranghemsida med matbilder och menyinspiration.</p>
-                    <a class="project-link" href="Bbq tonight.html">Visa projekt →</a>
-                </div>
-            </article>
-            <article class="card">
-                <a href="snowman.html">
-                    <img src="images3.jpg" alt="Snowman vinterillustration">
-                </a>
-                <div class="card-content">
-                    <h3>Snowman</h3>
-                    <p>En lekfull vinterillustration.</p>
-                    <a class="project-link" href="snowman.html">Visa projekt →</a>
-                </div>
-            </article>
+                <p> En restauranghemsida med matbilder och menyinspiration.</p>
+             <a class="project-link" href="Bbq tonight.html">  Visa projekt →</a>
+           </div>
+        </article>
 
             <article class="card">
-                <a href="id card.html">
-                    <img src="imagee2.jpeg" alt="ID Card appdesign" style="width: 100%;height: 100%;">
-                </a>
-                <div class="card-content">
-                    <h3>Impersonation ID</h3>
-                    <p>En idé för en säkerhetsapp med fokus på ID och identitet.</p>
-                    <a class="project-link" href="id card.html">Visa projekt →</a>
-                </div>
-            </article>
+           <a href="snowman.html" class="card-image-link">
+            <img src="images3.jpg" alt="Snowman vinterillustration">
+                    </a>
+              <div class="card-content">
+             <h3>Snowman</h3>
+             <p> En lekfull vinterillustration.</p>
+             <a class="project-link" href="snowman.html"> Visa projekt → </a>
+           </div>
+        </article>
 
+        <article class="card">
+         <a href="id card.html" class="card-image-link">
+        <img src="imagee2.jpeg" alt="ID Card appdesign">
+            </a>
+            <div class="card-content">
+           <h3>Impersonation ID</h3>
+         <p> En idé för en säkerhetsapp med fokus  på ID och identitet.</p>
+        <a class="project-link" href="id card.html"> Visa projekt → </a>
+          </div>
+         </article>
 
-            <article class="card">
-                <a href="weather.html">
-                    <img src="images4.jpeg" alt="Weather app design">
-                </a>
-                <div class="card-content">
-                    <h3>Weather App</h3>
-                    <p>En enkel design för en väderapp.</p>
-                    <a class="project-link" href="weather.html">Visa projekt →</a>
-                </div>
-            </article>
-        </div>
-    </section>
-</main>
-
-<footer>
+          <article class="card">
+          <a href="weather.html" class="card-image-link">
+           <img src="images4.jpeg" alt="Weather app design">
+             </a>
+           <div class="card-content">
+          <h3>Weather App</h3>
+         <p> En enkel design för en väderapp.</p>
+        <a class="project-link" href="weather.html"> Visa projekt → </a>
+      </div>
+     </article>
+    </div>
+        </section>
+    </main>
     
-    <p>© 2026 Faiqa. Alla rättigheter förbehållna.</p>
-       <details> 
-        <summary>Kontakt</summary>
-           <p class="contact-item">
-            <img src="mail icon.webp" class="contact-icon" alt="Email">
-            <a href="mailto:faiqaa12@gmail.com">faiqaa12@gmail.com</a>
-        </p>
+    <footer id="contact">
+          <p>© 2026 Faiqa. Alla rättigheter förbehållna.</p>
+    <details>
+       <summary>Kontakt</summary>
+       <div class="contact-details">
 
-        <p class="contact-item">
-            <img src="telephone icon.webp" class="contact-icon" alt="Telefon">
-            <a href="tel:0746448833">0746 44 88 33</a>
-        </p>
-    </details>
-</footer>
+       <p class="contact-item">
+      <img src="mail icon.webp" class="contact-icon" alt="mail">
+     <a href="mailto:faiqaa12@gmail.com">faiqaa12@gmail.com</a>
+    </p>
+
+    <p class="contact-item">
+    <img src="telephone icon.webp"class="contact-icon" alt="telephone">
+     <a href="tel:0746448833">0746 44 88 33</a>
+     </p>
+  </div>
+   </details>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 </body>
 </html>

@@ -1,66 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snowman | Faiqa</title>
+    <meta name="description" content="Faiqa's portfolio showcasing web design and HTML and CSS projects.">
+
+    <title>Faiqa | Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <a href="index.html" class="logo">
-        <span class="logo-icon">F.</span>
-        <span>Faiqa.</span>
-    </a>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">Om mig</a>
-        <a href="index.html">Projects</a>
+   <header class="site-header">
+    <nav class="navbar navbar-expand-md" aria-label="Huvudmeny">
+        <div class="container-fluid">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">F.</span>
+                <span>Faiqa.</span>
+            </a>
+            <button
+                class="navbar-toggler hamburger"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Öppna eller stäng menyn">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto topnav">
+                    <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="about.html">Om mig</a></li>
+               <li class="nav-item"> <a class="nav-link" href="index.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 
-<main class="project-layout">
-    <h1>Snowman</h1>
-    <img class="big-img" src="images3.jpg" alt="Snowman vinterillustration">
+    <main class="project-layout">
+        <section class="project-intro">
+            <h1>Snowman</h1>
+            <p>Ett glatt vintertema med snö, kalla färger och lekfull design.</p>
+        </section>
 
-    <article>
-        <h2>Projektbeskrivning</h2>
-        <p>
-        Detta är mitt snögubbe-projekt. Jag har skapat 
-        en vinterhemsida med en glad snögubbe som står i snön. Sidan har en kall blå 
-        vinterkänsla med snöfall i bakgrunden. Jag använde bara HTML och CSS för att skapa
-        designen. Hemsidan är enkel, rolig och fungerar på både mobil och dator.
-        </p>
-        <h3>Tekniker</h3>
-        <p>HTML5 och CSS3.</p>
+        <figure class="project-main-image">
+            <img src="images3.jpg" alt="Snowman vinterillustration">
+            <figcaption>Vinterprojekt med snögubben i fokus.</figcaption>
+        </figure>
 
-               <a class="project-link"
-   href="https://github.com/faiqanisar/Mini-ovning-3.git"
-   target="_blank"
-   rel="noopener noreferrer">
-    View Project on GitHub →
-</a>
-        <a class="project-link" href="index.html">← Tillbaka till alla projekt<</a>
-    </article>
-</main>
+        <section class="project-gallery" aria-label="Fler bilder från Snowman">
+            <img src="head.jpeg" alt="Snögubbens ansikte">
+            <img src="snowman.png" alt="Snowman">
+            <img src="images-2.jpeg" alt=" ">
+        </section>
 
-<footer>
-    <p>© 2026 Faiqa. Alla rättigheter förbehållna.</p>
-      <details> 
-        <summary>Kontakt</summary>
-           <p class="contact-item">
-            <img src="mail icon.webp" class="contact-icon" alt="Email">
-            <a href="mailto:faiqaa12@gmail.com">faiqaa12@gmail.com</a>
-        </p>
+        <article class="project-description">
+            <h2>Projektbeskrivning</h2>
+            <p>Snowman är ett kreativt vinterprojekt där jag utforskade former, färger och 
+                en lekfull visuell stil. Den kalla blå färgpaletten ger en vinterkänsla och 
+                gör att den vita snön syns tydligt. Projektet hjälpte mig att öva på att kombinera bilder, 
+                bakgrunder och layout med HTML och CSS.</p>
+            <h3>Tekniker</h3>
+            <ul><li>HTML5</li><li>CSS3</li><li>Flexbox och Grid</li><li>Animationer och övergångar</li></ul>
+            <a class="project-link" href="https://github.com/faiqanisar/Mini-ovning-3" target="_blank" rel="noopener noreferrer">Visa kod på GitHub &rarr;</a>
+            <a class="text-link back-link" href="index.html#projects">&larr; Tillbaka till alla projekt</a>
+        </article>
+    </main>
+    
+    <footer id="contact">
+          <p>© 2026 Faiqa. Alla rättigheter förbehållna.</p>
+    <details>
+       <summary>Kontakt</summary>
+       <div class="contact-details">
 
-        <p class="contact-item">
-            <img src="telephone icon.webp" class="contact-icon" alt="Telefon">
-            <a href="tel:0746448833">0746 44 88 33</a>
-        </p>
-    </details>
-</footer>
+       <p class="contact-item">
+      <img src="mail icon.webp" class="contact-icon" alt="mail">
+     <a href="mailto:faiqaa12@gmail.com">faiqaa12@gmail.com</a>
+    </p>
+
+    <p class="contact-item">
+    <img src="telephone icon.webp"class="contact-icon" alt="telephone">
+     <a href="tel:0746448833">0746 44 88 33</a>
+     </p>
+  </div>
+   </details>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
 </body>
 </html>
+    
+    
